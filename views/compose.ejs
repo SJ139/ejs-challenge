@@ -3,21 +3,19 @@
 <h1>Compose</h1>
 
 <form>
-
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Post Title</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Post</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
 </form>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Post Title</label>
-  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Post</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
+
 <div class="col-auto">
   <button type="submit" class="btn btn-primary mb-3">Publish</button>
 </div>
-
-</form>
 
 <%- include("partials/footer"); -%>
 
