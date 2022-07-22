@@ -2,14 +2,12 @@
 <%- include("partials/header"); -%>
 <h1>Compose</h1>
 
-<form>
-  <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Post Title</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Post</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+<form class="" action="/compose" method="post">
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" name="postTitle">
+    <label>Post</label> -->
+    <textarea class="form-control" name="postBody" rows="3" cols="30"></textarea>
   </div>
 </form>
 
@@ -18,10 +16,3 @@
 </div>
 
 <%- include("partials/footer"); -%>
-
-
-<!-- <form class="" action="/compose" method="post">
-  <input type="text" name="postTitle">
-  <textarea name="Text1" cols="40" rows="5"></textarea> -->
-<!-- <button type="submit" name="button">Publish</button> -->
-<!-- <button type="submit" name="button">Publish</button> -->
