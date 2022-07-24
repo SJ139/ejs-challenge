@@ -30,15 +30,17 @@ app.get("/contact", function(req,res){
 
 app.get("/compose", function(req,res){
   res.render("compose");
+
+});
+
+app.post("/compose", function(req,res){
+    console.log(req.body.posTitle);
+    console.log(req.body.postBody);
 });
 
 // app.post("/compose", function(req,res){
-//     console.log(req.body.posTitle);
+//
 // });
-
-app.post("/compose", function(req,res){
-    console.log(req.body.postBody);
-});
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
