@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <%- include("partials/header"); -%>
 
 <html lang="en" dir="ltr">
@@ -11,6 +10,11 @@
     <h1>Home</h1>
     <p>
       <%= startingContent %>
+
+      <% posts.forEach(function(post){ %>
+        <% console.log(post.title); %>
+      <% }); %>
+      
     </p>
   </body>
   <%- include("partials/footer"); -%>
